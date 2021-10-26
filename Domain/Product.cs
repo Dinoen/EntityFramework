@@ -1,35 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace EntityFramework.Domain
 {
-    public class Category
+    public class Product
     {
-
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
 
-        public Category(int id, string name, string description)
-        {
-            this.Id = id;
-            this.Description = description;
-            this.Name = name;
+        public int Categoryid {get; set;}
 
-        }
-
-        public Category()
-        {
-        }
+        public Category Category {get; set;}
 
         public override string ToString()
         {
             return JsonSerializer.Serialize(this);
         }
-
-
     }
 }
