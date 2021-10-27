@@ -9,15 +9,24 @@ namespace EntityFramework
         static void Main(string[] args)
         {
             var dataSvc = new DataService();
-            dataSvc.CreateCategory(new Category { Id = 10, Name = "Boardgames2", Description = "Gloomhaven2" });
+            // dataSvc.CreateCategory(new Category { Id = 10, Name = "Boardgames2", Description = "Gloomhaven2" });
 
+            // var products = ctx.products.Include(x => x.Category);
+
+            // var orders = ctx.orders;
+
+            // foreach (var p in orders)
+            // {
+            //     System.Console.WriteLine(p);
+            // }
         }
 
 
         // Order
         public static void GetOrder(int orderId)
         {
-
+            var dataSvc = new DataService();
+            //dataSvc.CreateCategory(new Category { Id = 10, Name = "Boardgames2", Description = "Gloomhaven2" });
         }
 
         public static void GetOrderByShipName(string shipName)

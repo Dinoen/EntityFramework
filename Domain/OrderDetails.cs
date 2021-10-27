@@ -17,14 +17,9 @@ namespace EntityFramework.Domain
         public int Discount { get; set; }
         public Product Product { get; set; }
 
-        public OrderDetails(int orderId, int productId, int unitPrice, int quantity, int discount, Product product)
+        public OrderDetails()
         {
-            OrderId = orderId;
-            ProductId = productId;
-            UnitPrice = unitPrice;
-            Quantity = quantity;
-            Discount = discount;
-            Product = product;
+           
         }
 
 

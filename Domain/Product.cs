@@ -12,6 +12,9 @@ namespace EntityFramework.Domain
         public string Name { get; set; }
 
         public int Categoryid {get; set;}
+        public int UnitPrice {get; set;}
+        public int UnitsInStock {get; set;}
+        public string QuantityPerUnit {get; set;}
 
         public Category Category {get; set;}
 
@@ -21,3 +24,5 @@ namespace EntityFramework.Domain
         }
     }
 }
+
+    
